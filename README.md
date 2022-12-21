@@ -31,4 +31,7 @@ LinearRegression, Lasso, Ridge, Logistic, SVD and OLS is done on original data a
 ## Observations 
 
 ## Conclusion
-
+From the observations of R2_score and MSE, we can see that R2_score for Linear Regression without normalization is 87.2 but the MSE is 141, but R2_score and MLE after normalization of data is 83.82 and 0.0689, which means the accuracy is reduced but the error is almost 0.
+Lasso gave a negative R_2 score which means the chosen model fits worse than a horizontal line. R2 compares the fit of the chosen model with that of a horizontal straight line (the null hypothesis).
+Logistic Regression failed to converge as the maximum likelihood estimates can be infinite and the algorithm fails to converge.
+The best accuracy and MSE was achieved by Ordinary Least Squares using statsmodels.
